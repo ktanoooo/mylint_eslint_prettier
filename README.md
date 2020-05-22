@@ -20,8 +20,16 @@ $ yarn add -D eslint
 $ yarn eslint --init
 
 # Reactを使う場合
-## "plugins": ["react"]
+## extends: ['plugin:react/recommended']
+## plugins: ["react"]
+## rules: { 'react/no-set-state': 'error' }
 $ yarn add -D eslint-plugin-react
+
+# TypeScriptを使う場合
+## extends: ['plugin:@typescript-eslint/eslint-recommended']
+## parser: '@typescript-eslint/parser'
+## plugins: ['react', '@typescript-eslint']
+$ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 
 $ yarn add -D prettier
 

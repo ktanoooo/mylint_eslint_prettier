@@ -8,12 +8,14 @@ module.exports = {
   extends: [
     'eslint:recommended',
     // 'plugin:react/recommended',  // react
+    // 'plugin:@typescript-eslint/eslint-recommended', //typescript
     'plugin:prettier/recommended',
   ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
+  // parser: '@typescript-eslint/parser', // typescript
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -21,7 +23,7 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module',
   },
-  // plugins: ['react'], // react
+  // plugins: ['react', '@typescript-eslint'], // react, typescript
   rules: {
     'no-var': 'error', //varを許可しない
     'no-unused-vars': 'off', // off: 使用していない定数をエラーにしない
