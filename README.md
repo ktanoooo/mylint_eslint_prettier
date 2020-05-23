@@ -35,7 +35,7 @@ $ yarn add -D prettier
 
 # googleのコーディング規約をベースにする場合
 ## googleコーディング規約: https://google.github.io/styleguide/javascriptguide.xml
-## eslint-config-googleを追加した場合は"extends"に”google"を追加する
+##  extends: ['google']
 $ yarn add -D eslint-config-google
 
 # ESLintとPrettierを一緒に使う場合
